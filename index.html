@@ -1,0 +1,336 @@
+ <!DOCTYPE html>
+<html lang="de">
+<head>
+  <title>schuettel.dev</title>
+  <meta charset='utf-8' />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="schuettel.dev ist ihr Partner für digitale Lösungen." />
+  <meta name="keywords" content="Digitale Lösungen, Webentwicklung, Digitalisierung, Cloud, Webapplikationen, Prozessoptimierungen, Prototypen, HTML, CSS, JavaScript, Ruby, Ruby on Rails, Rails, Crystal, Linux, Postgres, MariaDB, MySQL, ORACLE, Git, GitHub, GitLab, OSS, Node, StimulusJS, VueJS, React, Angular, Excel, MS Office, Don't Worry Be Happy">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <style type="text/css">
+    :root {
+      --primary-color: MediumSlateBlue;
+      --medium-gray: rgb(130, 130, 130);
+      --dark-gray: rgb(100, 100, 100);
+      --lavender: rgba(230, 230, 250, 1);
+      --transparency: rgba(255, 255, 255, 0);
+    }
+
+    * {
+      font-family: "Helvetica Neue", Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      font-style: normal;
+    }
+
+    body {
+      text-align: left;
+      font-size: 1.3rem;
+    }
+
+    h2 {
+      font-weight: normal;
+      font-size: 0.8rem;
+      color: var(--dark-gray);
+      margin-top: 6rem;
+      margin-bottom: 0.5rem;
+      letter-spacing: 0.1rem;
+      text-transform: uppercase;
+    }
+
+    h2 + h3 {
+      margin-top: 1rem;
+    }
+
+    h3 {
+      font-weight: normal;
+      margin-top: 6rem;
+      font-size: 2rem;
+      letter-spacing: 0.15rem;
+    }
+
+    a {
+      color: var(--primary-color);
+      text-decoration: none;
+    }
+
+    p {
+      letter-spacing: 0.05rem;
+      font-size: 1.3rem;
+      margin-top: 1.5rem;
+      margin-bottom: 3rem;
+      color: var(--dark-gray);
+    }
+
+    header {
+      font-weight: 700;
+      font-size: 3rem;
+      letter-spacing: -0.1rem;
+      padding-top: 4rem;
+      padding-bottom: 4rem;
+    }
+
+    footer {
+      color: var(--medium-gray);
+      font-size: 1rem;
+      text-align: center;
+      letter-spacing: 0.1rem;
+      margin-top: 12rem;
+      margin-bottom: 8rem;
+    }
+
+    img {
+      display: block;
+      margin: 0 auto;
+      max-width: 100%;
+      max-height: 33vh;
+    }
+
+    .container {
+      margin: 0 auto;
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+
+    .primary-color {
+      color: var(--primary-color);
+    }
+
+    .bg-gradient {
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: -999;
+      width: 100vw;
+      height: 100vh;
+      background-image: linear-gradient(to right, var(--lavender), var(--transparency));
+    }
+
+    .text-gradient {
+      font-weight: normal;
+      background-clip: text;
+      color: transparent;
+      background-image: linear-gradient(to right, black, var(--primary-color));
+    }
+
+    .button {
+      letter-spacing: 0.04rem;
+      font-size: 1.3rem;
+      text-align: center;
+      display: inline-block;
+      padding: 1.5rem 3rem;
+      border-radius: 1rem;
+      background-color: var(--primary-color);
+      color: var(--lavender);
+      background-image: linear-gradient(to right, SlateBlue, MediumSlateBlue);
+      transition: 0.2s;
+    }
+
+    .button:hover {
+      color: white;
+    }
+
+    .logo-grid {
+      font-size: 1rem;
+      letter-spacing: 0.04rem;
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+    }
+
+    .logo-grid--cell {
+      width: 50%;
+      margin: 0 auto;
+    }
+
+    .logo-grid--item {
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+      width: 100%;
+      text-align: center;
+    }
+
+    .logo-grid--item--icon {
+      width: 90%;
+      margin: 0 auto;
+    }
+
+    .logo-grid--item--text {
+      margin-top: 0.5rem;
+    }
+
+    .logo-grid--item--icon > img{
+      height: 10vw;
+      max-height: 20vh;
+    }
+
+    .illustration {
+      margin-top: 6rem;
+      margin-bottom: 9rem;
+    }
+
+    @media screen and (min-width: 1024px) {
+      h2 {
+        font-size: 1rem;;
+      }
+
+      h3 {
+        margin-top: 8rem;
+        font-size: 2.5rem;
+      }
+
+      header {
+        font-size: 4rem;
+      }
+
+      ul {
+        flex-wrap: nowrap;
+      }
+
+      .container {
+        max-width: 1024px;
+      }
+
+      .logo-grid--cell {
+        width: 20%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="bg-gradient"></div>
+  <div class="container">
+    <header>schuettel<span class="text-gradient">.dev</span></header>
+
+    <section>
+      <h2>Dienstleistungen</h2>
+
+      <h3>Moderne, digitale Lösungen.</h3>
+
+      <p>
+        Online Kundenportale, Backofficeandwendungen oder Schnittstellen zu Lieferanten - wir entwickeln mit Ihnen ihre optimale Softwarelösung.
+        Wir lösen dort Knoten, wo Prozesse hinken, technische Barrieren enstehen oder Excel Spreadsheets an ihre Grenzen stossen.<br />
+        Unkompliziert, massgeschneidert und modern.
+      </p>
+
+      <p>
+        <a href="mailto:hallo@schuettel.dev?subject=Auf der suche nach ..." class="button">Erzählen Sie uns wonach Sie suchen.</a>
+      </p>
+
+      <img src="images/undraw_web_developer_p3e5.svg" alt="Illustration of a web developer" class="illustration"/>
+
+      <h3>Maintenance und Expertise.</h3>
+
+      <p>
+        Technologien entwickeln sich weiter. Mit regelmässigen Softwareupdates werden nicht nur Sicherheitslücken geschlossen, sondern haben oft auch positiven Einfluss auf Stabilität und Geschwindigkeit.
+        Wir helfen Ihnen, ihre existierende Software auf Vordermann zu bringen. So können sie sich weiter unbeschwert auf ihre Kernkompetenzen fokussieren.<br />
+        Auf folgende Technologien und Plattformen sind wir spezialisiert:
+      </p>
+
+      <div class="logo-grid">
+        <div class="logo-grid--cell">
+          <div class="logo-grid--item">
+            <div class="logo-grid--item--icon">
+              <img src="images/icons/rails.svg" alt="Ruby On Rails Icon"/>
+            </div>
+            <div class="logo-grid--item--text">
+              Ruby und Rails
+            </div>
+          </div></div>
+        <div class="logo-grid--cell">
+          <div class="logo-grid--item">
+            <div class="logo-grid--item--icon">
+              <img src="images/icons/browser.svg" alt="Browser Icon"/></div>
+            <div class="logo-grid--item--text">
+              Webseiten generell
+            </div>
+          </div>
+        </div>
+        <div class="logo-grid--cell">
+          <div class="logo-grid--item">
+            <div class="logo-grid--item--icon">
+              <img src="images/icons/js.svg" alt="JavaScript Icon"/>
+            </div>
+            <div class="logo-grid--item--text">
+              JavaScript-Frameworks
+            </div>
+          </div>
+        </div>
+        <div class="logo-grid--cell">
+          <div class="logo-grid--item">
+            <div class="logo-grid--item--icon">
+              <img src="images/icons/database.svg" alt="Database Icon"/>
+            </div>
+            <div class="logo-grid--item--text">
+              Datenbanken
+            </div>
+          </div>
+        </div>
+        <div class="logo-grid--cell">
+          <div class="logo-grid--item">
+            <div class="logo-grid--item--icon">
+              <img src="images/icons/linux.svg" alt="Linux Icon"/>
+            </div>
+            <div class="logo-grid--item--text">
+              Linux Betriebsysteme
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <p>
+        <a href="mailto:hallo@schuettel.dev?subject=Wir benötigen unterstützung bei ..." class="button">Wo können wir Ihnen helfen?</a>
+      </p>
+
+      <img src="images/undraw_Creation_process_ukbh.svg" alt="Illustration of a creation process" class="illustration"/>
+
+      <h3>Prototyping.</h3>
+
+      <p>
+        Mit Prototypen können Sie ihre Ideen und Konzepte auf den digitalen Prüfstand bringen. Wir haben die richtigen Tools um Sie debei zeitnah und günstig zu Unterstützen.
+      </p>
+
+      <p>
+        <a href="mailto:hallo@schuettel.dev?subject=Wie ging das mit den Prototypen?" class="button">Ihr Prototyp startet hier.</a>
+      </p>
+
+      <img src="images/undraw_Prototyping_process_rswj.svg" alt="Illustration of a prototyping process" class="illustration"/>
+    </section>
+
+    <section>
+      <h2>Portrait</h2>
+
+      <h3>Wir.</h3>
+      <p>
+        Digital Natives mit Datendrang. Zuhause im Nordwesten der Schweiz. Jahrelange Erfahrung in der Webentwicklung mit Fokus auf Qualität und Nachhaltigkeit machen uns bei digitalen Lösungen zu ihrem zuverlässigen Partner.
+      </p>
+
+      <p>
+        <a href="mailto:hallo@schuettel.dev?subject=Kompliment für ..." class="button">Sympathisch? Sagen sie es uns.</a>
+      </p>
+
+      <img src="images/undraw_team_spirit_hrr4.svg" alt="Illustration of team spirit" class="illustration"/>
+    </section>
+
+    <section>
+      <h2>Kontakt</h2>
+
+      <h3>Anfragen.</h3>
+      <p>
+        Wenn Sie hier unten angelangt sind, haben wir Sie weiter oben noch nicht (genügend) überzeugen können. Oder Sie suchen nach etwas, was nicht erwähnt ist? Kein Problem, fragen Sie uns trotzdem durch Betätigung des untenstehenden Knopfes.
+      </p>
+
+      <p>
+        <a href="mailto:hallo@schuettel.dev?subject=Machen Sie auch ...?" class="button">Fragen kostet nichts.</a>
+      </p>
+
+      <img src="images/undraw_Newsletter_re_wrob.svg" alt="Illustration of letters" class="illustration"/>
+    </section>
+
+    <footer>
+      schuettel.dev
+    </footer>
+  </div>
+</body>
+</html>
