@@ -4,6 +4,6 @@
   command = "./build.sh"
 
 [[headers]]
-  for = "/images/icons/*"
+  for = "/images/*"
   [headers.values]
     Cache-Control = "public, max-age=604800, immutable"
