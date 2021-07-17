@@ -1,0 +1,101 @@
+{{ define "main" }}
+<main class="container-lg mx-auto px-20">
+  <h1>Die Experten für Web<wbr>applikationen.</h1>
+
+  <section x-data="{ open: false }">
+    <div class="cube-svg w-80 h-80 mx-auto"></div>
+
+    <div class="teaser">
+      <h2>Web<wbr>basiert in die Zukunft</h2>
+      <p>
+        Webapplikationen haben viele Vorteile. Alles was Sie und Ihre Mitarbeitenden benötigen ist ein Browser. Damit haben alle Beteiligten jederzeit von überall Zugriff auf die Informationen, auch unterwegs auf dem Mobiltelefon. Zudem ist die Software bei allen Benutzern immer auf dem aktuellsten Stand - mühsame Softwareupdates gehören der Vergangheit an. Ihre Daten bleiben weiterhin gut geschützt und die Kommunikation ist standardmässig verschlüsselt.
+      </p>
+    </div>
+
+    <div x-show="open" x-transition class="additional-information">
+      <h3>Unkompliziert und modern</h3>
+      <p class="mt-2 mb-10">
+        Online Kundenportale, Backofficeandwendungen oder Schnittstellen zu Lieferanten - wir entwickeln mit Ihnen ihre optimale Softwarelösung. Wir lösen dort Knoten, wo Prozesse hinken, technische Barrieren enstehen oder Excel Spreadsheets an ihre Grenzen stossen. Unkompliziert und modern!
+      </p>
+
+      <h3>Der Mensch im Zentrum</h3>
+      <p class="mt-2 mb-10">
+        Anwender:innen stehen bei uns im Mittelpunkt. Wir holen sie dort ab wo es Mühsahm wird oder Konflikte entstehen. Software macht nur dort Sinn, wo sie auch benutzt werden will.
+      </p>
+
+      <h3>Das richtige Tool am richtigen Ort</h3>
+      <p class="mt-2 mb-10">
+        Für viele Bedürfnisse gibt es oft bereits Lösungen. Wir sind nicht daran interessiert, Räder neu zu erfinden. Stattdessen finden wir für Sie die passende Anwendung(en) und helfen Ihnen diese in Ihrem Unternehmen richtig einzusetzen.
+      </p>
+
+      <button @click="open = false" x-show="open" class="link mt-4">Schliessen</button>
+    </div>
+
+    <button @click="open = true" x-show="! open" class="link">Mehr zu Webapplikationen</button>
+  </section>
+
+  <section x-data="{ open: false }">
+    <div class="terminal-svg w-72 h-72 mx-auto"></div>
+
+    <div class="teaser">
+      <h2>Unter<wbr>stützung bei Software<wbr>projekten</h2>
+      <p>
+        Technologien entwickeln sich laufend und rasant weiter. Der Unterhalt von Software kann mit der Zeit aufwendig und kostspielig werden. Wir helfen Ihnen ihre Applikationen und Systeme auf den aktuellsten und sichersten Stand zurückzubringen.
+      </p>
+    </div>
+
+    <div x-show="open" x-transition class="additional-information">
+      <h3>Ruby</h3>
+      <p class="mt-2 mb-10">
+        Wir kennen und benutzen Ruby seit vielen Jahren. Regelmässig nehmen wir an Konferenzen teil und sind immer wieder bei Entwicklungen von Bibliotheken involviert. Wir unterrichten auch bei Lernkursen und fördern so aktiv die Community.
+      </p>
+
+      <h3>Rails</h3>
+      <p class="mt-2 mb-10">
+        Wer <i>"Ruby"</i> sagt, fügt meistens <i>"on Rails"</i> hinzu. So auch wir. Erfolgreich haben wir dutzende Projekte mit Ruby on Rails auf die Beine gestellt. Die Einfachheit und Robustheit des Frameworks überzeugt uns bis heute und ist und bleibt unser Lieblingstool.
+      </p>
+
+      <h3>Datenbanken</h3>
+      <p class="mt-2 mb-10">
+        Datenbanken sind die vergessenen Helden der heutigen Informationstechnologien. Seit knapp 2 Jahrzehnten arbeiten wir täglich und intensiv mit Datenbanksystem wie Postgres, MySQL, MariaDB oder ORACLE. In dieser Zeit haben wir erfolgreich unzählige Upgrades und Optimierungen durchgeführt. Lassen Sie uns wissen, falls Sie irgendwo hilfe benötigen.
+      </p>
+
+      <button @click="open = false" x-show="open" class="link mt-4">Schliessen</button>
+    </div>
+
+    <button @click="open = true" x-show="! open" class="link">Mehr zu Unterstützung</button>
+  </section>
+
+  <section x-data="{ open: false }">
+    <div class="heart-svg w-72 h-72 mx-auto"></div>
+
+    <div class="teaser">
+      <h2>Wir</h2>
+      <p>
+        Digital Natives mit Datendrang. Zuhause im Nordwesten der Schweiz. Jahrelange Erfahrung in der Webentwicklung mit Fokus auf Qualität und Nachhaltigkeit machen uns bei digitalen Lösungen zu Ihrem zuverlässigen Partner.
+      </p>
+    </div>
+
+    <div x-show="open" x-transition class="additional-information">
+      <div class="grid grid-cols-2 gap-16 items-center mb-6">
+        <div class="justify-self-end">
+          <div class="rounded-full overflow-hidden h-32 w-32 shadow-xl border-4 border-white self-center">
+            <picture>
+              <source type="image/webp" srcset="images/mario.webp" />
+              <img src="images/mario.jpg" />
+            </picture>
+          </div>
+        </div>
+        <div class="justify-self-start text-left">
+          <h3 class="mb-2">Mario Schüttel</h3>
+          <p>Gründer, Projektleiter und Softwareentwickler. Fasziniert von einfachen Dingen und immer auf der Suche nach der Perfekten Lösung.</p>
+        </div>
+      </div>
+
+      <button @click="open = false" x-show="open" class="link mt-4">Schliessen</button>
+    </div>
+
+    <button @click="open = true" x-show="! open" class="link" >Mehr zu uns</button>
+  </section>
+</main>
+{{ end }}

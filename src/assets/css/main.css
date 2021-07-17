@@ -1,0 +1,91 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-style: normal;
+}
+
+body {
+  @apply bg-gray-50 text-gray-900;
+  @apply dark:bg-bluegray-900 dark:text-gray-100;
+  @apply min-h-screen grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+h1 {
+  @apply text-5xl mb-20 text-center;
+}
+
+h2 {
+  @apply text-2xl font-bold tracking-wide;
+  @apply dark:text-coolgray-300;
+}
+
+h3 {
+  @apply text-xl tracking-wide;
+  @apply dark:text-schuettel-200;
+}
+
+i {
+  @apply italic;
+}
+
+p {
+  @apply text-xl tracking-wider leading-normal;
+  @apply text-gray-900 font-light;
+  @apply dark:text-gray-200 dark:font-extralight;
+}
+
+header {
+  @apply text-5xl font-bold tracking-tight text-black dark:text-gray-50 text-center my-24;
+}
+
+header > span {
+  @apply font-normal tracking-normal;
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-black;
+  @apply dark:to-white;
+}
+
+section {
+  @apply mb-40 text-center;
+}
+
+.teaser {
+  @apply my-4;
+}
+
+.teaser p {
+  @apply mt-4 text-2xl;
+}
+
+.additional-information {
+  @apply mt-10 mb-4 px-10 py-16 rounded-xl bg-gradient-to-br shadow-inner;
+  @apply from-coolgray-200 to-gray-200;
+  @apply dark:from-coolgray-800 dark:to-gray-800;
+}
+
+/* footer */
+footer.dark-banner {
+  @apply text-center mt-24 pt-10 pb-16 border-t-4 text-lg tracking-wider leading-normal;
+  @apply bg-coolgray-100 border-gray-300;
+  @apply dark:bg-coolgray-900 dark:border-coolgray-800 dark:text-coolgray-500;
+}
+
+footer a {
+  @apply inline-block mt-2 underline transition ease-in-out duration-150;
+  @apply text-purple-500 hover:text-black;
+  @apply dark:text-purple-400 dark:hover:text-white;
+}
+
+.link {
+  @apply text-xl tracking-wide text-schuettel-600 transition hover:text-black;
+  @apply dark:text-schuettel-300 dark:hover:text-white;
+}
+
+.cube-svg { background-image: url(../images/cube.svg); }
+.heart-svg { background-image: url(../images/heart.svg); }
+.terminal-svg { background-image: url(../images/terminal.svg); }
+
+[x-cloak] { display: none !important; }

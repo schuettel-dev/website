@@ -1,24 +1,7 @@
 # schuettel.dev
 
-## Run locally
+Static site using [Hugo](https://gohugo.io/)
 
-```shell
-./development.sh
-```
+## TODO
 
-## Build
-
-```shell
-./build.sh
-```
-
-It copies `./src` to `./_site`.
-
-## Build and preview
-
-```shell
-netlify dev
-```
-
-* Requires Netlify CLI: `npm install netlify-cli -g`
-* Does not watch changes
+* [ ] Improve README
