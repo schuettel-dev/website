@@ -35,7 +35,8 @@ i {
 p {
   @apply text-xl tracking-wider leading-normal;
   @apply text-gray-900 font-light;
-  @apply dark:text-gray-200 dark:font-extralight;
+  @apply dark:text-gray-200;
+   /*dark:font-extralight;*/
 }
 
 header {
