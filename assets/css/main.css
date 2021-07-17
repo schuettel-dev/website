@@ -10,17 +10,17 @@
 body {
   @apply bg-gray-50 text-gray-900;
   @apply dark:bg-bluegray-900 dark:text-gray-100;
-  @apply min-h-screen grid;
+  @apply min-h-screen max-w-full grid;
   grid-template-rows: auto 1fr auto;
 }
 
 h1 {
-  @apply text-5xl mb-20 text-center;
+  @apply text-4xl sm:text-5xl mb-20 text-center;
 }
 
 h2 {
-  @apply text-2xl font-bold tracking-wide;
-  @apply dark:text-coolgray-300;
+  @apply text-2xl font-bold tracking-wider;
+  @apply dark:text-coolgray-200;
 }
 
 h3 {
@@ -30,13 +30,6 @@ h3 {
 
 i {
   @apply italic;
-}
-
-p {
-  @apply text-xl tracking-wider leading-normal;
-  @apply text-gray-900 font-light;
-  @apply dark:text-gray-200;
-   /*dark:font-extralight;*/
 }
 
 header {
@@ -50,21 +43,37 @@ header > span {
 }
 
 section {
-  @apply mb-40 text-center;
+  @apply mb-20 sm:mb-40 text-left sm:text-center;
+}
+
+.funky-icon {
+  @apply w-40 h-40 sm:w-48 sm:h-48 md:w-80 md:h-80 mx-auto;
 }
 
 .teaser {
-  @apply my-4;
+  @apply mt-4 mb-4 sm:mb-8;
 }
 
 .teaser p {
-  @apply mt-4 text-2xl;
+  @apply mt-4 text-lg text-left sm:text-2xl sm:text-center;
+  @apply dark:text-gray-200;
 }
 
 .additional-information {
-  @apply mt-10 mb-4 px-10 py-16 rounded-xl bg-gradient-to-br shadow-inner;
+  @apply px-6 py-10 sm:px-10 sm:py-16 rounded-xl bg-gradient-to-br shadow-inner;
   @apply from-coolgray-200 to-gray-200;
   @apply dark:from-coolgray-800 dark:to-gray-800;
+}
+
+.additional-information p {
+  @apply text-base sm:text-xl tracking-wider leading-normal;
+  @apply text-gray-900 font-light;
+  @apply dark:text-gray-200;
+}
+
+.portrait-image {
+  @apply w-36 sm:w-48;
+  @apply rounded-full overflow-hidden shadow-xl border-4 border-white;
 }
 
 /* footer */
@@ -81,7 +90,7 @@ footer a {
 }
 
 .link {
-  @apply text-xl tracking-wide text-schuettel-600 transition hover:text-black;
+  @apply text-lg tracking-wider text-schuettel-500 transition hover:text-black;
   @apply dark:text-schuettel-300 dark:hover:text-white;
 }
 
