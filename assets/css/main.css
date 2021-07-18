@@ -80,7 +80,7 @@ section {
 footer.dark-banner {
   @apply text-center mt-24 pt-10 pb-16 border-t-4 text-lg tracking-wider leading-normal;
   @apply bg-coolgray-100 border-gray-300;
-  @apply dark:bg-coolgray-900 dark:border-coolgray-800 dark:text-coolgray-500;
+  @apply dark:bg-coolgray-900 dark:border-coolgray-800 dark:text-coolgray-200;
 }
 
 footer a {
@@ -94,8 +94,13 @@ footer a {
   @apply dark:text-schuettel-300 dark:hover:text-white;
 }
 
+a.contact-button {
+  @apply tracking-wider inline-flex items-center py-4 border border-transparent shadow-sm text-base font-medium rounded-md text-white bg-schuettel-600 hover:bg-schuettel-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-schuettel-500 w-full max-w-xl transition;
+}
+
 .cube-svg { background-image: url(../images/cube.svg); }
 .heart-svg { background-image: url(../images/heart.svg); }
 .terminal-svg { background-image: url(../images/terminal.svg); }
+.at-symbol-svg { background-image: url(../images/at_symbol.svg); }
 
 [x-cloak] { display: none !important; }
