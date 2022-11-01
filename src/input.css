@@ -55,17 +55,37 @@
   font-family: 'Dosis';
 }
 
+body {
+  @apply dark:bg-gray-900 dark:text-gray-300;
+}
+
 section {
   @apply flex flex-col gap-y-4;
 }
 
 .section-icon {
-  @apply flex justify-center bg-white w-20 h-20 rounded-lg text-raspberry-500;
+  @apply w-full flex justify-center;
+}
+
+.section-icon svg {
+  @apply w-20 h-20 text-raspberry-500 dark:text-raspberry-500;
+}
+
+footer {
+  @apply px-4 py-8 flex gap-x-8 bg-raspberry-500  ;
+}
+
+footer * {
+  @apply text-white bg-raspberry-500;
+}
+
+address {
+  @apply not-italic text-lg;
 }
 
 @keyframes fade {
   0% { opacity: 1; }
-  50% { opacity: 0.2; }
+  50% { opacity: 0.3; }
   100% { opacity: 1; }
 }
 
