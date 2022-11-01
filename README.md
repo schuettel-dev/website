@@ -1,7 +1,12 @@
 # schuettel.dev
 
-Static site using [Hugo](https://gohugo.io/)
+## Development
 
-## TODO
 
-* [ ] Improve README
+```sh
+ruby -run -ehttpd . -p8000
+```
+
+```sh
+npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch
+```

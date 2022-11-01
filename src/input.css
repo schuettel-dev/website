@@ -1,0 +1,130 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Dosis';
+  src: url('../src/fonts/Dosis-ExtraLight.ttf') format('truetype');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Dosis';
+  src: url('../src/fonts/Dosis-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Dosis';
+  src: url('../src/fonts/Dosis-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Dosis';
+  src: url('../src/fonts/Dosis-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Dosis';
+  src: url('../src/fonts/Dosis-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Dosis';
+  src: url('../src/fonts/Dosis-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Dosis';
+  src: url('../src/fonts/Dosis-ExtraBold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}
+
+* {
+  font-family: 'Dosis';
+}
+
+section {
+  @apply flex flex-col gap-y-4;
+}
+
+.section-icon {
+  @apply flex justify-center bg-white w-20 h-20 rounded-lg text-raspberry-500;
+}
+
+@keyframes fade {
+  0% { opacity: 1; }
+  50% { opacity: 0.2; }
+  100% { opacity: 1; }
+}
+
+#top_left_spike {
+  animation-name: fade;
+  animation-duration: 2s;
+  animation-delay: 0s;
+}
+
+#top_left_edge {
+  animation-name: fade;
+  animation-duration: 2s;
+  animation-delay: 0.2s;
+}
+
+#top_center_triangle {
+  animation-name: fade;
+  animation-duration: 2s;
+  animation-delay: 0.4s;
+}
+
+#top_center_route {
+  animation-name: fade;
+  animation-duration: 2s;
+  animation-delay: 0.6s;
+}
+
+#top_right_edge {
+  animation-name: fade;
+  animation-duration: 2s;
+  animation-delay: 0.8s;
+}
+
+#top_right_spike {
+  animation-name: fade;
+  animation-duration: 2s;
+  animation-delay: 1s;
+}
+
+#bottom_left {
+  animation-name: fade;
+  animation-duration: 2s;
+  animation-delay: 0.4s;
+}
+
+#bottom_center {
+  animation-name: fade;
+  animation-duration: 2s;
+  animation-delay: 0.6s;
+}
+
+#bottom_right {
+  animation-name: fade;
+  animation-duration: 2s;
+  animation-delay: 0.8s;
+}
+
+#central_flare {
+  animation-name: fade;
+  animation-duration: 2s;
+  animation-delay: 0.5s;
+}
