@@ -59,8 +59,20 @@ body {
   @apply dark:bg-gray-900 dark:text-gray-300;
 }
 
+h2 {
+  @apply font-medium text-4xl tracking-wide;
+}
+
+h3 {
+  @apply text-base font-semibold tracking-wide;
+}
+
+p {
+  @apply text-xl tracking-wide leading-relaxed;
+}
+
 section {
-  @apply flex flex-col gap-y-4;
+  @apply flex flex-col gap-y-4 ;
 }
 
 .section-icon {
@@ -71,80 +83,74 @@ section {
   @apply w-20 h-20 text-raspberry-500 dark:text-raspberry-500;
 }
 
-footer {
-  @apply px-4 py-8 flex gap-x-8 bg-raspberry-500  ;
+details {
+  @apply flex flex-col justify-center space-y-4;
 }
 
-footer * {
-  @apply text-white bg-raspberry-500;
+details .details {
+  @apply p-4 flex flex-col gap-y-6 dark:bg-gray-800 rounded border dark:border-gray-700;
 }
 
-address {
-  @apply not-italic text-lg;
+summary {
+  @apply text-lg text-raspberry-500 cursor-pointer hover:text-black transition;
 }
 
-@keyframes fade {
+@keyframes flare {
   0% { opacity: 1; }
-  50% { opacity: 0.3; }
+  50% { opacity: 0.4; }
   100% { opacity: 1; }
 }
 
-#top_left_spike {
-  animation-name: fade;
+#top_left {
+  animation-name: flare;
   animation-duration: 2s;
   animation-delay: 0s;
 }
 
-#top_left_edge {
-  animation-name: fade;
+#top_center_left {
+  animation-name: flare;
   animation-duration: 2s;
   animation-delay: 0.2s;
 }
 
-#top_center_triangle {
-  animation-name: fade;
+#top_center {
+  animation-name: flare;
   animation-duration: 2s;
   animation-delay: 0.4s;
 }
 
-#top_center_route {
-  animation-name: fade;
+#top_center_right {
+  animation-name: flare;
   animation-duration: 2s;
   animation-delay: 0.6s;
 }
 
 #top_right_edge {
-  animation-name: fade;
+  animation-name: flare;
   animation-duration: 2s;
   animation-delay: 0.8s;
 }
 
-#top_right_spike {
-  animation-name: fade;
+#top_right {
+  animation-name: flare;
   animation-duration: 2s;
   animation-delay: 1s;
 }
 
 #bottom_left {
-  animation-name: fade;
+  animation-name: flare;
   animation-duration: 2s;
   animation-delay: 0.4s;
 }
 
 #bottom_center {
-  animation-name: fade;
+  animation-name: flare;
   animation-duration: 2s;
   animation-delay: 0.6s;
 }
 
 #bottom_right {
-  animation-name: fade;
+  animation-name: flare;
   animation-duration: 2s;
   animation-delay: 0.8s;
-}
-
-#central_flare {
-  animation-name: fade;
-  animation-duration: 2s;
-  animation-delay: 0.5s;
 }
