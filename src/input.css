@@ -101,55 +101,59 @@ summary {
   100% { opacity: 1; }
 }
 
-#top_left {
+.portrait-image {
+  /*@apply rounded-full;*/
+}
+
+.animated-ruby #top_left {
   animation-name: flare;
   animation-duration: 2s;
   animation-delay: 0s;
 }
 
-#top_center_left {
+.animated-ruby #top_center_left {
   animation-name: flare;
   animation-duration: 2s;
   animation-delay: 0.2s;
 }
 
-#top_center {
+.animated-ruby #top_center {
   animation-name: flare;
   animation-duration: 2s;
   animation-delay: 0.4s;
 }
 
-#top_center_right {
+.animated-ruby #top_center_right {
   animation-name: flare;
   animation-duration: 2s;
   animation-delay: 0.6s;
 }
 
-#top_right_edge {
+.animated-ruby #top_right_edge {
   animation-name: flare;
   animation-duration: 2s;
   animation-delay: 0.8s;
 }
 
-#top_right {
+.animated-ruby #top_right {
   animation-name: flare;
   animation-duration: 2s;
   animation-delay: 1s;
 }
 
-#bottom_left {
+.animated-ruby #bottom_left {
   animation-name: flare;
   animation-duration: 2s;
   animation-delay: 0.4s;
 }
 
-#bottom_center {
+.animated-ruby #bottom_center {
   animation-name: flare;
   animation-duration: 2s;
   animation-delay: 0.6s;
 }
 
-#bottom_right {
+.animated-ruby #bottom_right {
   animation-name: flare;
   animation-duration: 2s;
   animation-delay: 0.8s;
