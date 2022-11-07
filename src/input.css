@@ -56,11 +56,11 @@
 }
 
 body {
-  @apply dark:bg-gray-900 dark:text-gray-300;
+  @apply bg-white text-gray-900;
 }
 
 h2 {
-  @apply font-medium text-4xl tracking-wide;
+  @apply font-semibold text-2xl tracking-wide;
 }
 
 h3 {
@@ -80,7 +80,7 @@ section {
 }
 
 .section-icon svg {
-  @apply w-20 h-20 text-raspberry-500 dark:text-raspberry-500;
+  @apply w-20 h-20 text-raspberry-500;
 }
 
 details {
@@ -88,7 +88,7 @@ details {
 }
 
 details .details {
-  @apply p-4 flex flex-col gap-y-6 dark:bg-gray-800 rounded border dark:border-gray-700;
+  @apply p-4 flex flex-col gap-y-6 rounded border;
 }
 
 summary {
