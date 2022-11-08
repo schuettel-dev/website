@@ -55,8 +55,21 @@
   font-family: 'Dosis';
 }
 
+html {
+  @apply min-h-full;
+}
+
 body {
-  @apply bg-white text-gray-900;
+  @apply md:mx-auto bg-white text-gray-900 gap-y-20;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas: 'header' 'main' 'footer';
+}
+
+h1 {
+  @apply text-4xl text-right font-semibold tracking-wider mt-28 mb-10;
 }
 
 h2 {
@@ -71,8 +84,18 @@ p {
   @apply text-xl tracking-wide leading-relaxed;
 }
 
+header {
+  @apply flex flex-col md:mx-auto md:my-10 p-4;
+  grid-area: header;
+}
+
+main {
+  @apply p-4 grid grid-cols-1 md:mx-auto md:grid-cols-2 gap-24;
+  grid-area: main;
+}
+
 section {
-  @apply flex flex-col gap-y-4 ;
+  @apply flex flex-col gap-y-4 max-w-prose;
 }
 
 .section-icon {
@@ -87,12 +110,41 @@ details {
   @apply flex flex-col justify-center space-y-4;
 }
 
-details .details {
-  @apply p-4 flex flex-col gap-y-6 rounded border;
+details > div {
+  @apply border-l-4 p-4 flex flex-col gap-y-6 bg-gray-100 rounded-lg;
+}
+
+details p {
+  @apply text-lg;
 }
 
 summary {
   @apply text-lg text-raspberry-500 cursor-pointer hover:text-black transition;
+}
+
+footer {
+  @apply flex bg-raspberry-500 text-white px-4 py-8;
+  grid-area: footer;
+}
+
+.mailto {
+  @apply text-lg underline text-white transition hover:text-black;
+}
+
+.schuettel-logo {
+  @apply flex items-center gap-x-2 justify-end;
+}
+
+.schuettel-logo--ruby {
+  @apply flex h-16 w-20 text-raspberry-500;
+}
+
+.schuettel-logo--text {
+  @apply text-2xl text-raspberry-500 font-light;
+}
+
+.schuettel-logo--text strong {
+  @apply font-bold not-italic;
 }
 
 @keyframes flare {
@@ -102,7 +154,7 @@ summary {
 }
 
 .portrait-image {
-  /*@apply rounded-full;*/
+  @apply mx-auto rounded-full overflow-hidden w-32 h-32 border-8 border-gray-300;
 }
 
 .animated-ruby #top_left {
