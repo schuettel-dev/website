@@ -2,32 +2,36 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
+/*@font-face {
   font-family: 'Dosis';
   src: url('../src/fonts/Dosis-ExtraLight.ttf') format('truetype');
   font-weight: 200;
   font-style: normal;
+  font-display: swap;
 }
-
+*/
 @font-face {
   font-family: 'Dosis';
   src: url('../src/fonts/Dosis-Light.ttf') format('truetype');
   font-weight: 300;
   font-style: normal;
+  font-display: swap;
 }
 
-@font-face {
+/*@font-face {
   font-family: 'Dosis';
   src: url('../src/fonts/Dosis-Regular.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
+  font-display: swap;
 }
-
+*/
 @font-face {
   font-family: 'Dosis';
   src: url('../src/fonts/Dosis-Medium.ttf') format('truetype');
   font-weight: 500;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -35,6 +39,7 @@
   src: url('../src/fonts/Dosis-SemiBold.ttf') format('truetype');
   font-weight: 600;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -42,14 +47,16 @@
   src: url('../src/fonts/Dosis-Bold.ttf') format('truetype');
   font-weight: 700;
   font-style: normal;
+  font-display: swap;
 }
 
-@font-face {
+/*@font-face {
   font-family: 'Dosis';
   src: url('../src/fonts/Dosis-ExtraBold.ttf') format('truetype');
   font-weight: 800;
   font-style: normal;
-}
+  font-display: swap;
+}*/
 
 * {
   font-family: 'Dosis';
@@ -119,11 +126,11 @@ details p {
 }
 
 summary {
-  @apply text-lg text-raspberry-500 cursor-pointer hover:text-black transition;
+  @apply text-xl text-blueberry-600 cursor-pointer hover:text-black transition;
 }
 
 footer {
-  @apply flex bg-raspberry-500 text-white px-4 py-8;
+  @apply flex bg-blueberry-900 text-white px-4 py-8;
   grid-area: footer;
 }
 
