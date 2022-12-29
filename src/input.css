@@ -131,6 +131,10 @@ footer {
   @apply text-lg underline text-white transition hover:text-black;
 }
 
+.contact-button {
+  @apply w-full flex items-center gap-x-2 justify-center text-2xl bg-raspberry-500 text-white p-2 rounded-lg hover:bg-raspberry-500/80 transition;
+}
+
 .schuettel-logo {
   @apply flex items-center gap-x-2 justify-end;
 }
