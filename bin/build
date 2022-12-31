@@ -12,6 +12,10 @@ npx tailwindcss -i ./src/input.css -o ./public/build.css --minify
 BUILD_SUM=`md5sum public/build.css | grep -Eo '^[^ ]+'`
 CSS_FILE_NAME="build.${BUILD_SUM}.css"
 
-sed -i '' "s/\/dist\/output.css/${CSS_FILE_NAME}/" ./public/index.html
+if [[ "$OSTYPE" =~ ^darwin ]]; then
+  sed -i '' "s/\/dist\/output.css/${CSS_FILE_NAME}/" ./public/index.html
+else
+  sed "s/\/dist\/output.css/${CSS_FILE_NAME}/" ./public/index.html
+fi
 
 mv ./public/build.css ./public/${CSS_FILE_NAME}
