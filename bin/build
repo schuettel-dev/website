@@ -1,0 +1,17 @@
+#!/bin/bash
+
+rm -rf ./public
+mkdir ./public
+
+cp CNAME ./public
+cp -r ./src/* ./public
+rm ./public/input.css
+
+npx tailwindcss -i ./src/input.css -o ./public/build.css --minify
+
+BUILD_SUM=`md5sum public/build.css | grep -Eo '^[^ ]+'`
+CSS_FILE_NAME="build.${BUILD_SUM}.css"
+
+sed -i '' "s/\/dist\/output.css/${CSS_FILE_NAME}/" ./public/index.html
+
+mv ./public/build.css ./public/${CSS_FILE_NAME}
