@@ -135,7 +135,7 @@ footer {
 }
 
 .mailto {
-  @apply text-lg underline text-white transition hover:text-black;
+  @apply text-lg underline text-white transition hover:text-raspberry-500;
 }
 
 .contact-button {
