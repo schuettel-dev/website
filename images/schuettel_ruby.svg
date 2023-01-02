@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 60">
+  <g id="schuettel-dev-ruby" mask="url(#schuettel-ruby-morse-with-borders-mask)">
+    <path id="top_left_spike" d="M30,20l-27.597,0c0,-1.177 0.519,-2.293 1.414,-3.052l18.788,-15.02c0.786,-0.575 1.648,-1.029 2.555,-1.351l4.84,19.423Z" style="fill:#fc004e;" />
+    <path id="top_left_edge" d="M30,20l-4.854,-19.418c1.071,-0.382 2.208,-0.582 3.362,-0.582l16.492,0l-15,20Z" style="fill:#fc004e;" />
+    <path id="top_right_edge" d="M55,0l16.492,0c2.154,0 4.246,0.695 5.969,1.977l3.639,2.923l-11.1,15.1l-15,-20Z" style="fill:#fc004e;" />
+    <path id="top_right_spike" d="M96.216,16.977c0.875,0.758 1.381,1.86 1.381,3.023l-27.597,0l11.1,-15.1l15.116,12.077Z" style="fill:#fc004e;" />
+    <path id="bottom_right" d="M97.597,20l-0,0c-0,1.215 -0.552,2.364 -1.501,3.123l-43.597,34.878c-0.57,0.456 -1.233,0.734 -1.916,0.834l19.417,-38.835l27.597,-0Z" style="fill:#fc004e;" />
+    <path id="bottom_center" d="M50.583,58.835c-0.387,0.057 -0.779,0.057 -1.166,-0l-19.417,-38.835l40,0l-19.417,38.835Z" style="fill:#fc004e;" />
+    <path id="bottom_left" d="M49.417,58.835c-0.683,-0.1 -1.346,-0.378 -1.916,-0.834c-8.111,-6.489 -33.75,-27 -43.597,-34.878c-0.949,-0.759 -1.501,-1.908 -1.501,-3.123l0,0l27.597,0l19.417,38.835Z" style="fill:#fc004e;" />
+    <path id="top_center_triangle" d="M60,20l-15,-20l-15,20l30,0Z" style="fill:#fc004e;" />
+    <path id="top_center_route" d="M70,20l-10,0l-15,-20l10,0l15,20Z" style="fill:#fc004e;" />
+    <path id="central_flare" d="M50,32l-7.5,-10l15,0l-7.5,10Z" style="fill:#fc004e;" />
+  </g>
+
+  <mask id="schuettel-ruby-morse-with-borders-mask">
+    <rect x="0" y="0" width="100" height="60" fill="white" />
+    <g id="morse_y">
+      <rect id="morse_y_1" x="48.8" y="32.2" width="11.4" height="3.4" fill="black" stroke-width="0" ry="1.7" rx="1.7" />
+      <circle id="morse_y_2" cx="62.6" cy="38" r="1.7" fill="black"/>
+      <rect id="morse_y_3" x="64.8" y="32.2" width="11.4" height="3.4" fill="black" stroke-width="0" ry="1.7" rx="1.7" />
+      <rect id="morse_y_4" x="76.8" y="32.2" width="11.4" height="3.4" fill="black" stroke-width="0" ry="1.7" rx="1.7" />
+    </g>
+    <g id="morse_b">
+      <rect id="morse_b_1" x="64.8" y="21.2" width="11.4" height="3.4" fill="black" stroke-width="0" ry="1.7" rx="1.7" />
+      <circle id="morse_b_2" cx="78.4" cy="27" r="1.7" fill="black"/>
+      <circle id="morse_b_3" cx="82.4" cy="27" r="1.7" fill="black"/>
+      <circle id="morse_b_4" cx="86.4" cy="27" r="1.7" fill="black"/>
+    </g>
+    <g id="morse_u">
+      <circle id="morse_u_1" cx="71.2" cy="17" r="1.7" fill="black"/>
+      <circle id="morse_u_2" cx="75.2" cy="17" r="1.7" fill="black"/>
+      <rect id="morse_r_3" x="77.6" y="11.3" width="11.4" height="3.4" fill="black" stroke-width="0" ry="1.7" rx="1.7"/>
+    </g>
+    <g id="morse_r">
+      <circle id="morse_r_1" cx="45.7" cy="17" r="1.7" fill="black"/>
+      <rect id="morse_r_2" x="47.8" y="11.3" width="11.4" height="3.4" fill="black" stroke-width="0" ry="1.7" rx="1.7"/>
+      <circle id="morse_r_3" cx="61.4" cy="17" r="1.7" fill="black"/>
+    </g>
+  </mask>
+</svg>
