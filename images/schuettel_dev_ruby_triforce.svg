@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 60">
+  <g id="schuettel-dev-ruby-triforce" mask="url(#schuettel-dev-ruby-triforce-borders-mask)">
+    <polygon id="top_left_spike" points="0,20 30,20 25,0" style="fill:rgb(205,0,54);" />
+    <polygon id="top_left_corner" points="25,0 30,20 45,0" style="fill:rgb(255,165,188);" />
+    <polygon id="top_center_triangle" points="45,0 30,20 60,20" style="fill:rgb(172,0,41);" />
+    <polygon id="top_center_rhombus" points="45,0 55,0 70,20 60,20" style="fill:rgb(255,122,147);" />
+    <polygon id="top_right_corner" points="55,0 75,0 81.1,4.9 70,20" style="fill:rgb(254,227,255);" />
+    <polygon id="rop_right_spike" points="81.1,4.9 100,20 70,20" style="fill:rgb(200,121,255);" />
+    <polygon id="bottom_left" points="0,20 30,20 50,60" style="fill:rgb(255,83,182);" />
+    <polygon id="bottom_center" points="30,20 70,20 50,60" style="fill:rgb(221,0,93);" />
+    <polygon id="bottom_right" points="70,20 100,20 50,60" style="fill:rgb(98,0,13);" />
+    <polygon id="central_flare" points="42.5,22 57.5,22 50,32" style="fill:rgb(255,214,232);" />
+  </g>
+
+  <mask id="schuettel-dev-ruby-triforce-borders-mask">
+    <rect x="0" y="0" width="100" height="60" fill="white" />
+    <g id="rounded_borders">
+      <path d="M100,0l-0,59.978l-100,0l0,-59.978l27.806,0c-1.816,-0 -3.579,0.618 -4.997,1.753c-4.818,3.854 -16.268,13.014 -20.857,16.685c-0.474,0.38 -0.75,0.954 -0.75,1.562c-0,0.608 0.276,1.182 0.75,1.562c8.243,6.594 40.08,32.064 46.799,37.438c0.73,0.585 1.768,0.585 2.498,0c6.719,-5.374 38.556,-30.844 46.799,-37.438c0.474,-0.38 0.75,-0.954 0.75,-1.562c0,-0.608 -0.276,-1.182 -0.75,-1.562c-4.589,-3.671 -16.039,-12.831 -20.857,-16.685c-1.418,-1.135 -3.181,-1.753 -4.997,-1.753l27.806,0Z" />
+    </g>
+  </mask>
+</svg>
