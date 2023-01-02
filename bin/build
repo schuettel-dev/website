@@ -19,7 +19,3 @@ else
 fi
 
 mv ./public/build.css ./public/${CSS_FILE_NAME}
-
-# debug
-ls ./public
-cat ./public/index.html
