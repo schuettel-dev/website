@@ -5,17 +5,24 @@ mkdir ./public
 
 cp CNAME ./public
 cp -r ./src/* ./public
+
+# paths to fonts
+if [[ "$OSTYPE" =~ ^darwin ]]; then
+  sed -i '' "s|../src/fonts|/fonts|g" ./public/input.css
+else
+  sed -i "s|../src/fonts|/fonts|g" ./public/input.css
+fi
+
+npx tailwindcss -i ./public/input.css -o ./public/build.css --minify
 rm ./public/input.css
 
-npx tailwindcss -i ./src/input.css -o ./public/build.css --minify
-
-BUILD_SUM=`md5sum public/build.css | grep -Eo '^[^ ]+'`
+BUILD_SUM=$(md5sum public/build.css | grep -Eo '^[^ ]+')
 CSS_FILE_NAME="build.${BUILD_SUM}.css"
 
 if [[ "$OSTYPE" =~ ^darwin ]]; then
-  sed -i '' "s/\/dist\/output.css/${CSS_FILE_NAME}/" ./public/index.html
+  sed -i '' "s|/dist/output.css|${CSS_FILE_NAME}|" ./public/index.html
 else
-  sed -i "s/\/dist\/output.css/${CSS_FILE_NAME}/" ./public/index.html
+  sed -i "s|/dist/output.css|${CSS_FILE_NAME}|" ./public/index.html
 fi
 
 mv ./public/build.css ./public/${CSS_FILE_NAME}
