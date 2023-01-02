@@ -15,7 +15,7 @@ CSS_FILE_NAME="build.${BUILD_SUM}.css"
 if [[ "$OSTYPE" =~ ^darwin ]]; then
   sed -i '' "s/\/dist\/output.css/${CSS_FILE_NAME}/" ./public/index.html
 else
-  sed "s/\/dist\/output.css/${CSS_FILE_NAME}/" ./public/index.html > ./public/index.html
+  sed "s/\/dist\/output.css/${CSS_FILE_NAME}/" ./public/index.html
 fi
 
 mv ./public/build.css ./public/${CSS_FILE_NAME}
